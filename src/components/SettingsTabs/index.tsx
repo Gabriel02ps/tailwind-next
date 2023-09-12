@@ -9,7 +9,7 @@ export function SettingsTabs() {
 
   return (
     <Tabs.Root value={currentTab} onValueChange={setCurrentTab}>
-      <ScrollArea.Root className="w-full" type="scroll">
+      <ScrollArea.Root className="w-full" type="hover">
         <ScrollArea.Viewport className="w-full overflow-x-scroll">
           <Tabs.List className="mt-6 flex w-full items-center gap-4 border-b border-zinc-200">
             <TabItem
@@ -65,7 +65,7 @@ export function SettingsTabs() {
           </Tabs.List>
         </ScrollArea.Viewport>
         <ScrollArea.Scrollbar
-          className="flex h-0.5 translate-y-1.5 touch-none select-none flex-col bg-zinc-100"
+          className="flex h-2.5 touch-none select-none flex-col bg-zinc-100"
           orientation="horizontal"
         >
           <ScrollArea.Thumb className="relative flex-1 rounded-lg bg-zinc-300" />
